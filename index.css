@@ -16,6 +16,9 @@
     padding: 10px 12px;
     border: 0px solid #848484;
     border-radius: 8px;
+    position: fixed;
+    top: 25px
+    left: 25px
     background: #d9d9d9;
     background: -webkit-gradient(linear, left top, left bottom, from(#d9d9d9), to(#848484));
     background: -moz-linear-gradient(top, #d9d9d9, #848484);
@@ -41,13 +44,13 @@
 .button:before{
     content:  "\0000a0";
     display: inline-block;
-    height: 75px;
-    width: 75px;
+    height: 24px;
+    width: 24px;
     line-height: 24px;
-    margin: 0 4px -6px -4px;
-    position: fixed;
-    top: 100px;
-    left: 100px;
+    margin: 6px 4px 6px 4px;
+    position: relative;
+    top: 0px;
+    left: 0px;
     background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAQ0lEQVRIie2UwQ0AIAjEinFxXVxG4NUHhg7A5aAhgIWIOvwPAjh2wDMD9CNv4NohvRmLSnSLgu4PbywqGYtK9Ab6ehK03QYvB7m8ywAAAABJRU5ErkJggg==") no-repeat center transparent;
     background-size: 100% 100%;
 }
