@@ -45,6 +45,7 @@
   transform: translateX(0%);
   transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
 }
+
 .button:active {
     background: #848484;
     background: -webkit-gradient(linear, left top, left bottom, from(#848484), to(#848484));
@@ -76,3 +77,12 @@
   z-index: -1;
   transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 }
+
+nav a { color: #E00; display: block; padding: 0.5em 1em; text-decoration: none; }
+nav a:hover { color: #F55; }
+nav ul,
+nav ul li { list-style-type: none; padding: 0; margin: 0; }
+
+nav > ul { background: #EEE; text-align: center; }
+nav > ul > li { display: inline-block; border-left: solid 1px #aaa; }
+nav > ul > li:first-child { border-left: none; }
