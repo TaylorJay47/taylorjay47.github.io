@@ -38,11 +38,13 @@
     text-decoration: none;
 }
 
-.button:hover .sub-menu{
+.bottun:focus .sub-menu,
+.button:focus-within .sub-menu,
+.button:hover .sub-menu {
   visibility: visible; /* shows sub-menu */
   opacity: 1;
-  z-index: 2;
-  transform: translateX(0%);
+  z-index: 1;
+  transform: translateY(0%);
   transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
 }
 
