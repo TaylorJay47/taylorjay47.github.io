@@ -10,7 +10,7 @@
 }
 
 .button {
-    z-index: 3;
+    z-index: 100;
     text-align: center;
     vertical-align: middle;
     padding: 10px 12px;
@@ -58,6 +58,8 @@
 }
 
 .sub-menu{
+  position: relative;
+  z-index: 99;
   list-style-type: none;
   display: none;
   float:inherit;
