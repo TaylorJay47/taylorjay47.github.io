@@ -1,3 +1,7 @@
+html{
+  background-color: #ffffff;
+}
+
 h1 { font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
 h3 { font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; }
 p { font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; }
@@ -5,8 +9,18 @@ blockquote { font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans
 pre { font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5667px; }
 a { font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; font-style: normal; font-variant: normal; font-weight: bold; line-height: 20px; }
 
+html{
+  background: url("/assets/images/page_bkg.png");
+
+}
+
 body{
-  min-width: 400px;
+  background-color: white;
+  width:1331px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  margin:auto;
 }
 
 a{
