@@ -84,6 +84,7 @@ li a{
   position: fixed;
   top: 36px;
   left: 71px;
+  height: 56px;
   z-index: 99;
   box-shadow: 5px 5px 8px #888888;
   list-style-type: none;
