@@ -53,6 +53,24 @@ body{
     background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAQ0lEQVRIie2UwQ0AIAjEinFxXVxG4NUHhg7A5aAhgIWIOvwPAjh2wDMD9CNv4NohvRmLSnSLgu4PbywqGYtK9Ab6ehK03QYvB7m8ywAAAABJRU5ErkJggg==") no-repeat center transparent;
     background-size: 100% 100%;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a{
+  display: block;
+ padding: 8px;
+ background-color: #dddddd;
+}
+
 .menu{
   list-style-type: none;
   z-index: 100;
@@ -63,8 +81,6 @@ body{
 }
 
 .sub-menu{
-  padding: 12px;
-  background: #d9d9d9;
   position: fixed;
   z-index: 99;
   list-style-type: none;
