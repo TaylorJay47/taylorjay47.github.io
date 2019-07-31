@@ -1,3 +1,15 @@
+@import "compass/css3";
+
+// Parameters
+
+$menuColor:#AFF8C4;
+$subMenuColor:#9CE0C9;
+$fontColor: #0E0500;
+$menuWidth:940px;
+$backgroundColor:#FFFCF6;
+$borderRadius:4px;
+$duration:0.33s;
+
 .roundedbody {
   background: #A4A4A4;
   background: -moz-linear-gradient(top, #A4A4A4 0%, #2388CB 0%, #144E75 100%);
@@ -25,17 +37,6 @@
     box-shadow: 5px 5px 8px #888888
 }
 
-
-.submenu{
-    display:none;
-    float: right;
-    list-style-type: none;
-}
-
-.menuli:hover .submenu{
-    display: block;
-}
-
 .button:hover,
 .button:focus {
     border: 0px solid #bdbdbd;
@@ -61,3 +62,65 @@
     background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAQ0lEQVRIie2UwQ0AIAjEinFxXVxG4NUHhg7A5aAhgIWIOvwPAjh2wDMD9CNv4NohvRmLSnSLgu4PbywqGYtK9Ab6ehK03QYvB7m8ywAAAABJRU5ErkJggg==") no-repeat center transparent;
     background-size: 100% 100%;
 }
+
+ ul.menu{
+ 	width: $menuWidth;
+ 	height: 40px;
+ 	line-height: 40px;
+ 	position: relative;
+ 	text-align: center;
+ 	margin: auto;
+ 	padding: auto;
+ 	background-color:$menuColor;
+ 	@include border-top-radius($borderRadius);
+
+ 	li{
+ 		float: left;
+ 		width: auto;
+ 		a{
+ 			display: block;
+ 			width: auto;
+ 			text-decoration: none;
+ 		}
+ 	}
+ 	li:hover
+ 	{
+ 		background-color:$subMenuColor;
+ 		@include transition-property(background-color);
+ 		@include transition-duration($duration);
+ 		@include border-top-radius($borderRadius);
+
+ 		ul{
+ 			width: $menuWidth;
+ 			background: $subMenuColor;
+ 			visibility: visible;
+ 			@include opacity(1);
+ 			@include transition-property(opacity);
+ 			@include transition-duration($duration);
+ 			@include border-bottom-radius($borderRadius);
+ 		}
+ 	}
+ }
+
+ ul.sub-menu{
+ 	@include opacity(0);
+ 	visibility: hidden;
+ 	display:block;
+ 	position: absolute;
+ 	left: 0;
+ 	height: 40px;
+ 	line-height: 40px;
+ 	background-color:$subMenuColor;
+ 	li:hover{
+ 		@include border-bottom-radius($borderRadius);
+ 	}
+ }
+
+ ul.menu,
+ ul.sub-menu{
+ 	a{
+ 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ 		color:$fontColor;
+ 		padding: 0 10px;
+ 	}
+ }
