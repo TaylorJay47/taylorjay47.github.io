@@ -78,6 +78,7 @@ li a{
 
 .menu:hover .sub-menu{
   visibility: visible;
+  opacity: 1;
 }
 
 .sub-menu{
@@ -85,6 +86,8 @@ li a{
   z-index: 99;
   list-style-type: none;
   visibility: hidden;
+  opacity: 0;
+  transition:visibility 0.3s linear,opacity 0.3s linear;
   float:inherit;
   width: auto;
 }
