@@ -79,4 +79,4 @@ nav ul li { list-style-type: none; padding: 0; margin: 0; }
 
 nav > ul { background: #EEE; text-align: center; }
 nav > ul > li { display: inline-block; border: solid 1px #aaa; }
-nav > ul > li:first-child { border: none; }
+nav > ul > li:first-child { border: none; float: left;}
