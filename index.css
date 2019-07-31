@@ -1,15 +1,3 @@
-@import "compass/css3";
-
-// Parameters
-
-$menuColor:#AFF8C4;
-$subMenuColor:#9CE0C9;
-$fontColor: #0E0500;
-$menuWidth:940px;
-$backgroundColor:#FFFCF6;
-$borderRadius:4px;
-$duration:0.33s;
-
 .roundedbody {
   background: #A4A4A4;
   background: -moz-linear-gradient(top, #A4A4A4 0%, #2388CB 0%, #144E75 100%);
@@ -22,8 +10,7 @@ $duration:0.33s;
 }
 
 .button {
-    display: inline-block;
-    z-index: 3
+    z-index: 3;
     text-align: center;
     vertical-align: middle;
     padding: 10px 12px;
@@ -63,66 +50,23 @@ $duration:0.33s;
     background-size: 100% 100%;
 }
 
- ul.menu{
-   list-style-type: none;
- 	width: $menuWidth;
- 	height: 40px;
- 	line-height: 40px;
- 	position: fixed;
-  top: 25px;
-  left: 5%;
- 	margin: auto;
- 	padding: auto;
- 	background-color:$menuColor;
- 	@include border-top-radius($borderRadius);
+#nav .menu_normal li {
+    position: static !Important;
+}
 
- 	li{
- 		float: left;
- 		width: auto;
- 		a{
- 			display: block;
- 			width: auto;
- 			text-decoration: none;
- 		}
- 	}
- 	li:hover
- 	{
- 		background-color:$subMenuColor;
- 		@include transition-property(background-color);
- 		@include transition-duration($duration);
- 		@include border-top-radius($borderRadius);
+#nav .menu_normal .sub-menu  {
+    left: 0 !Important;
+    right: 0 !Important;
+}
 
- 		ul.sub-menu{
- 			width: $menuWidth;
- 			background: $subMenuColor;
- 			visibility: visible;
- 			@include opacity(1);
- 			@include transition-property(opacity);
- 			@include transition-duration($duration);
- 			@include border-bottom-radius($borderRadius);
- 		}
- 	}
- }
+#nav .menu_normal .sub-menu > li {
+    float: left !Important;
+}
 
- ul.sub-menu{
- 	@include opacity(0);
- 	visibility: hidden;
- 	display:block;
- 	position: absolute;
- 	left: 0;
- 	height: 40px;
- 	line-height: 40px;
- 	background-color:$subMenuColor;
- 	li:hover{
- 		@include border-bottom-radius($borderRadius);
- 	}
- }
-
- ul.menu,
- ul.sub-menu{
- 	a{
- 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
- 		color:$fontColor;
- 		padding: 0 10px;
- 	}
- }
+    /* add vertical separator between submenu items */
+#nav .menu_normal .sub-menu > li {
+    border-left: 1px solid #4f4d49;
+}
+#nav .menu_normal .sub-menu > li:first-child {
+    border-left: 0;
+}
