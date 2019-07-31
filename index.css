@@ -90,7 +90,7 @@ $duration:0.33s;
  		@include transition-duration($duration);
  		@include border-top-radius($borderRadius);
 
- 		ul{
+ 		ul.sub-menu{
  			width: $menuWidth;
  			background: $subMenuColor;
  			visibility: visible;
