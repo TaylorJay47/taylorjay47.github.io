@@ -27,12 +27,14 @@
 
 
 .submenu{
+    visibility: hidden;
     display:none;
+    float: left;
 }
 
-.menuli:hover > ul{
+.menuli:hover .submenu{
+    visibility: visible;
     display: block;
-    float:  left;
 }
 
 .button:hover,
