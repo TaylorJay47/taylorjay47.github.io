@@ -83,6 +83,8 @@ li a{
 
 .sub-menu{
   position: fixed;
+  top: 30px;
+  left: 81px;
   z-index: 99;
   list-style-type: none;
   visibility: hidden;
