@@ -58,7 +58,7 @@
 }
 
 .sub-menu{
-  position: relative;
+  position: fixed;
   z-index: 99;
   list-style-type: none;
   visibility: hidden;
