@@ -18,8 +18,6 @@ body{
   text-align: center;
   vertical-align: middle;
   padding: 10px 12px;
-  border: 0px solid #848484;
-  border-radius: 8px;
   position: fixed;
   top: 25px;
   left: 25px;
@@ -61,7 +59,7 @@ ul {
   overflow: hidden;
 }
 
-li {
+.horili {
   float: left;
 }
 
@@ -87,6 +85,7 @@ li a{
   top: 36px;
   left: 71px;
   z-index: 99;
+  box-shadow: 5px 5px 8px #888888;
   list-style-type: none;
   visibility: hidden;
   opacity: 0;
