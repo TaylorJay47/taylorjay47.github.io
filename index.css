@@ -1,3 +1,5 @@
+h1 { font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5667px; } a { font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight:bold; line-height: 20px; }
+
 body{
   min-width: 400px;
 }
@@ -23,6 +25,20 @@ body{
   left: 25px;
   background: #d9d9d9;
   color: #ffffff;
+  box-shadow: 5px 5px 8px #888888
+}
+
+.button2 {
+  z-index: 100;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 12px;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  width: 75px;
+  background: #d9d9d9;
+  color: #000000;
   box-shadow: 5px 5px 8px #888888
 }
 
@@ -61,13 +77,19 @@ ul {
 
 .horili {
   float: left;
-  padding-top:10px;
-  padding-bottom:10px;
-  padding-left:12px;
 }
 
-li a{
+.vertli {
+  float: top
+}
+
+.sub-menu li a{
  display: block;
+ text-decoration: none;
+ padding: 8px;
+ background-color: #dddddd;
+ border-right: 0px solid #AAAAAA;
+ transition: border-right 0.1s linear;
 }
 
 .menu{
@@ -83,21 +105,61 @@ li a{
 
 .sub-menu{
   position: fixed;
-  top: 25px;
+  top: 36px;
   left: 71px;
-  height: 56px;
   background-color: #dddddd;
   z-index: 99;
-  box-shadow: 5px 5px 8px #888888;
+  box-shadow: 3px 3px 8px #888888;
   list-style-type: none;
   visibility: hidden;
   opacity: 0;
   transition:visibility 0.3s linear,opacity 0.3s linear, transform .3s;
   float:inherit;
   width: auto;
-  text-decoration: none;
 }
 
 .sub-menu li a:hover{
   background-color: #eaeaea;
+  border-right: 5px solid #AAAAAA;
+}
+
+
+.menu2{
+  list-style-type: none;
+  z-index: 100;
+}
+
+.menu2:hover .sub-menu2{
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0px, 10px);
+}
+
+.sub-menu2{
+  position: fixed;
+  top: 55px;
+  right: 25px;
+  background-color: #dddddd;
+  z-index: 99;
+  box-shadow: 3px 3px 8px #888888;
+  list-style-type: none;
+  visibility: hidden;
+  opacity: 0;
+  transition:visibility 0.3s linear,opacity 0.3s linear, transform .3s;
+  float: inherit;
+  width: inherit;
+}
+
+.sub-menu2 li a{
+  display: block;
+  text-decoration: none;
+  padding: 8px;
+  background-color: #dddddd;
+  border-bottom: 0px solid #AAAAAA;
+  transition: border-width 0.1s linear;
+}
+
+.sub-menu2 li a:hover{
+  background-color: #eaeaea;
+  border-width: 5px;
 }
