@@ -21,9 +21,6 @@
     top: 25px
     left: 25px
     background: #d9d9d9;
-    background: -webkit-gradient(linear, left top, left bottom, from(#d9d9d9), to(#848484));
-    background: -moz-linear-gradient(top, #d9d9d9, #848484);
-    background: linear-gradient(to bottom, #d9d9d9, #848484);
     color: #ffffff;
     box-shadow: 5px 5px 8px #888888
 }
@@ -31,9 +28,6 @@
 .button:focus {
     border: 0px solid #bdbdbd;
     background: #ffffff;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#9e9e9e));
-    background: -moz-linear-gradient(top, #ffffff, #9e9e9e);
-    background: linear-gradient(to bottom, #ffffff, #9e9e9e);
     color: #ffffff;
     text-decoration: none;
 }
@@ -50,10 +44,8 @@
 
 .button:active {
     background: #848484;
-    background: -webkit-gradient(linear, left top, left bottom, from(#848484), to(#848484));
-    background: -moz-linear-gradient(top, #848484, #848484);
-    background: linear-gradient(to bottom, #848484, #848484);
 }
+
 .button:before{
     content:  "\0000a0";
     display: inline-block;
@@ -86,5 +78,5 @@ nav ul,
 nav ul li { list-style-type: none; padding: 0; margin: 0; }
 
 nav > ul { background: #EEE; text-align: center; }
-nav > ul > li { display: inline-block; border-left: solid 1px #aaa; }
-nav > ul > li:first-child { border-left: none; }
+nav > ul > li { display: inline-block; border: solid 1px #aaa; }
+nav > ul > li:first-child { border: none; }
