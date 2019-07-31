@@ -61,11 +61,13 @@ ul {
 
 .horili {
   float: left;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:12px;
 }
 
 li a{
  display: block;
- height: 56px;
 }
 
 .menu{
