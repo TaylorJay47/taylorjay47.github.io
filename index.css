@@ -73,7 +73,7 @@ a{
   padding: 8px 12px;
   position: fixed;
   float: inherit;
-  width: 75px;
+  width: 74px;
   background: #d9d9d9;
   color: #000000;
   box-shadow: 5px 5px 8px #888888
@@ -143,14 +143,14 @@ ul {
 .menu:hover .sub-menu{
   visibility: visible;
   opacity: 1;
+  z-index: 101;
   transform: translate(10px, 0px);
 }
 
 .sub-menu{
   position: fixed;
   float: inherit;
-  top: 36px;
-  margin-left: 50px;
+  margin-left: 46px;
   background-color: #dddddd;
   z-index: 99;
   box-shadow: 3px 3px 8px #888888;
@@ -179,13 +179,14 @@ ul {
 .menu2:hover .sub-menu2{
   visibility: visible;
   opacity: 1;
+  z-index:101;
   transform: translate(0px, 10px);
 }
 
 .sub-menu2{
   position: fixed;
   float: inherit;
-  top: 45px;
+  top: 26px;
   background-color: #dddddd;
   z-index: 99;
   box-shadow: 3px 3px 8px #888888;
