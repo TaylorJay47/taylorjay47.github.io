@@ -143,8 +143,9 @@ ul {
 
 .sub-menu{
   position: fixed;
+  float: inherit;
   top: 36px;
-  left: 75px;
+  margin-left: 50px;
   background-color: #dddddd;
   z-index: 99;
   box-shadow: 3px 3px 8px #888888;
@@ -152,7 +153,6 @@ ul {
   visibility: hidden;
   opacity: 0;
   transition:visibility 0.3s linear,opacity 0.3s linear, transform .3s;
-  float:inherit;
   width: auto;
 }
 
@@ -179,8 +179,8 @@ ul {
 
 .sub-menu2{
   position: fixed;
-  top: 50px;
-  right: 25px;
+  float: inherit;
+  top: 45px;
   background-color: #dddddd;
   z-index: 99;
   box-shadow: 3px 3px 8px #888888;
@@ -188,8 +188,7 @@ ul {
   visibility: hidden;
   opacity: 0;
   transition:visibility 0.3s linear,opacity 0.3s linear, transform .3s;
-  float: inherit;
-  width: inherit;
+
 }
 
 .sub-menu2 li a{
