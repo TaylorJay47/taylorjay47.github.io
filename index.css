@@ -4,6 +4,10 @@ body{
   min-width: 400px;
 }
 
+a{
+  color: inherit;
+}
+
 .roundedbody {
   background: #A4A4A4;
   background: -moz-linear-gradient(top, #A4A4A4 0%, #2388CB 0%, #144E75 100%);
@@ -121,6 +125,10 @@ ul {
 .sub-menu li a:hover{
   background-color: #eaeaea;
   border-right: 5px solid #AAAAAA;
+}
+
+.sub-menu li a:active{
+  background-color: #AAAAAA;
 }
 
 
