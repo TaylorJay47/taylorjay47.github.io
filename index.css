@@ -93,6 +93,7 @@ li a{
   transition:visibility 0.3s linear,opacity 0.3s linear, transform .3s;
   float:inherit;
   width: auto;
+  text-decoration: none;
 }
 
 .sub-menu li a:hover{
