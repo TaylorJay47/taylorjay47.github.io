@@ -49,6 +49,9 @@
     background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAQ0lEQVRIie2UwQ0AIAjEinFxXVxG4NUHhg7A5aAhgIWIOvwPAjh2wDMD9CNv4NohvRmLSnSLgu4PbywqGYtK9Ab6ehK03QYvB7m8ywAAAABJRU5ErkJggg==") no-repeat center transparent;
     background-size: 100% 100%;
 }
+.menu{
+  list-style-type: none;
+}
 
 .menu:hover .sub-menu{
   display: block;
