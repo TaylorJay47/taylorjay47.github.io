@@ -50,23 +50,10 @@
     background-size: 100% 100%;
 }
 
-#nav .menu_normal li {
-    position: static !Important;
+.menu:hover .sub-menu{
+  visibility: visible;
 }
 
-#nav .menu_normal .sub-menu  {
-    left: 0 !Important;
-    right: 0 !Important;
-}
-
-#nav .menu_normal .sub-menu > li {
-    float: left !Important;
-}
-
-    /* add vertical separator between submenu items */
-#nav .menu_normal .sub-menu > li {
-    border-left: 1px solid #4f4d49;
-}
-#nav .menu_normal .sub-menu > li:first-child {
-    border-left: 0;
+.sub-menu{
+  visibility: hidden;
 }
