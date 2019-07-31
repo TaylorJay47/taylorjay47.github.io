@@ -58,6 +58,7 @@
 }
 
 .sub-menu{
+  list-style-type: none;
   display: none;
   float:inherit;
   width: auto;
