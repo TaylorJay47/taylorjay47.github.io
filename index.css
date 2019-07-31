@@ -51,11 +51,11 @@
 }
 
 .menu:hover .sub-menu{
-  visibility: visible;
+  display: block;
 }
 
 .sub-menu{
-  visibility: hidden;
-  float:left;
+  display: none;
+  float:inherit;
   width: auto;
 }
