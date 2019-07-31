@@ -1,3 +1,7 @@
+body{
+  min-width: 400px;
+}
+
 .roundedbody {
   background: #A4A4A4;
   background: -moz-linear-gradient(top, #A4A4A4 0%, #2388CB 0%, #144E75 100%);
