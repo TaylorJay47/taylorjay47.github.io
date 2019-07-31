@@ -36,6 +36,12 @@ a{
   margin:auto;
 }
 
+.titlecard{
+  height: 100px;
+  text-align: center;
+  padding-top: 50px;
+}
+
 .roundedbody {
   background: #A4A4A4;
   background: -moz-linear-gradient(top, #A4A4A4 0%, #2388CB 0%, #144E75 100%);
@@ -65,7 +71,6 @@ a{
   z-index: 100;
   text-align: center;
   padding: 8px 12px;
-  top: 20px;
   position: fixed;
   float: inherit;
   width: 75px;
