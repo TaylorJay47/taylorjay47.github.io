@@ -56,4 +56,6 @@
 
 .sub-menu{
   visibility: hidden;
+  float:left;
+  width: auto;
 }
