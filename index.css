@@ -54,14 +54,14 @@
 }
 
 .menu:hover .sub-menu{
-  display: block;
+  visibility: visible;
 }
 
 .sub-menu{
   position: relative;
   z-index: 99;
   list-style-type: none;
-  display: none;
+  visibility: hidden;
   float:inherit;
   width: auto;
 }
