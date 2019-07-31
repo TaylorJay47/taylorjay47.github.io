@@ -51,6 +51,7 @@
 }
 .menu{
   list-style-type: none;
+  z-index: 100;
 }
 
 .menu:hover .sub-menu{
