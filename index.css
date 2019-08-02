@@ -51,7 +51,7 @@ a{
   float: inherit;
   background: #dddddd;
   color: #ffffff;
-  box-shadow: 5px 5px 8px #888888
+  box-shadow: 5px 5px 6px #888888
 }
 
 
@@ -65,7 +65,7 @@ a{
   width: 74px;
   background: #dddddd;
   color: #000000;
-  box-shadow: 5px 5px 8px #888888
+  box-shadow: 5px 5px 6px #888888
 }
 
 .button:hover,
@@ -142,7 +142,7 @@ ul {
   margin-left: 46px;
   background-color: #dddddd;
   z-index: 99;
-  box-shadow: 3px 3px 8px #888888;
+  box-shadow: 5px 5px 6px #888888;
   list-style-type: none;
   visibility: hidden;
   opacity: 0;
@@ -178,7 +178,7 @@ ul {
   top: 26px;
   background-color: #dddddd;
   z-index: 99;
-  box-shadow: 3px 3px 8px #888888;
+  box-shadow: 5px 5px 6px #888888;
   list-style-type: none;
   visibility: hidden;
   opacity: 0;
