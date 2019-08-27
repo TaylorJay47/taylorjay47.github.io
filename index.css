@@ -57,7 +57,7 @@ a{
   float: inherit;
   background: #dddddd;
   color: #ffffff;
-  box-shadow: 5px 5px 6px rgba(#000000, 0.65);
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.65);
 }
 
 
@@ -71,7 +71,7 @@ a{
   width: 74px;
   background: #dddddd;
   color: #000000;
-  box-shadow: 5px 5px 6px rgba(#000000, 0.65);
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.65);
 }
 
 .button:hover,
