@@ -11,6 +11,7 @@ a { font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif; f
 
 .photo{
   background: url("/assets/images/115232032_6884e794f1_b.jpg") no-repeat center;
+  background-size: 100%;
   height:500px;
   max-width:1331px;
 }
