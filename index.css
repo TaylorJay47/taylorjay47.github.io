@@ -14,10 +14,11 @@ html{
 
 }
 
-.family{
-  background: #adffa6;
+.photo{
+  background: url("/assets/images/115232032_6884e794f1_b.jpg");
   height:500px;
   max-width:1331px;
+
 }
 
 .right {
