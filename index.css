@@ -117,7 +117,7 @@ ul {
 .sub-menu li a{
  display: block;
  text-decoration: none;
- padding: 24px 8px 24px 8px;
+ padding: 18px 8px 18px 8px;
  background-color: #dddddd;
  border-right: 0px solid #AAAAAA;
  transition: border-right 0.1s linear;
